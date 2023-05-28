@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个性推荐</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- 主体内容 -->
+    <div id="content">
+        <!-- header头部 -->
+        <div id="header">
+            <!-- logo -->
+            <div class="logo"></div>
+            <!-- 功能区域 -->
+            <div class="right_bar">
+                <!-- 设置菜单 -->
+                <div class="setting">
+                    <a href="javascript:;">个人设置</a>
+                    <a href="javascript:;">个人主题</a>
+                    <a href="javascript:;">听歌识曲</a>
+                </div>
+                <!-- 搜索框 -->
+                <div class="search_bar clearfix">
+                    <input type="search" class="search" onprogress="javascript:;" placeholder="请输入内容">
+                </div>
+                <!-- 信息展示区域 -->
+                <div class="reveal_bar">
+                    <!-- 消息提醒 -->
+                    <div class="message">
+                        <img src="../Images/main/bell.png" alt="">
+                        <!-- 消息数 -->
+                        <span>1</span>
+                    </div>
+                    <!-- 头像 -->
+                    <div class="user_icon">
+                        <img src="../Images/main/user_icon.jpeg" alt="">
+                    </div>
+                </div>
+                <!-- 窗口按钮 -->
+                <div class="button_bar">
+                    <!-- 最大化 -->
+                    <a href="javascript:;" class="maxBtn" title="全屏显示"></a>
+                    <!-- 最小化 -->
+                    <a href="javascript:;" class="minBtn" title="最小化显示"></a>
+                    <!-- 关闭 -->
+                    <a href="javascript:;" class="closeBtn" title="还原显示大小"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 歌词详情 -->
+        <div id="song_detail">
+            <!-- 封面 -->
+            <div class="iconWrap">
+                <img src="../Images/main/user_icon.jpeg" alt="">
+            </div>
+            <!-- 歌曲信息 -->
+            <div class="rightWrap">
+                <!-- 歌名 -->
+                <div class="nameBar">
+                    <h1>千千粤歌</h1>
+                    <p class="songer">歌手：<span>周杰伦</span></p>
+                </div>
+                <!-- 歌词 -->
+                <div class="infoWrap">
+                    <div class="songInfo">
+
+                    </div>
+                    <!-- <p>想起牵着手 走过的小巷</p>
+                    <p>我依然记得 年少初吻的那教堂</p>
+                    <p class="current">还有一起画爱心 的那道墙</p>
+                    <p>当你收到信 我还在流浪</p>
+                    <p>那年的约定 都放在心上</p>
+
+                    <p>当你收到信 我还在流浪</p>
+                    <p>那年的约定 都放在心上</p>
+                    <p>当你收到信 我还在流浪</p>
+                    <p>那年的约定 都放在心上</p><p>当你收到信 我还在流浪</p>
+                    <p>那年的约定 都放在心上</p><p>当你收到信 我还在流浪</p>
+                    <p>那年的约定 都放在心上</p> -->
+                </div>                
+            </div>
+            <!-- 背景层 -->
+            <div class="songBg"></div>
+        </div>
+
+        <!-- footer底部 -->
+        <div id="footer">
+            <!-- 当前歌曲信息 -->
+            <div class="songNow">
+                <!-- 封面 -->
+                <div class="song_icon">
+                    <img src="../Images/main/user_icon.jpeg" alt="">
+                    <!-- 提示按钮 -->
+                    <input type="checkbox" id="song_tip">
+                    <label for="song_tip" class="song_tip" title="沉浸播放"></label>
+                </div>
+                <!-- 信息 -->
+                <div class="song_info">
+                    <p>
+                        <!-- 歌名 -->
+                        <span class="songName">千千粤歌</span>
+                        <!-- 喜欢 -->
+                        <input type="checkbox" id="loveWrap">
+                        <label for="loveWrap" class="loveBtn">                            
+                            <!-- <a href="javascript:;" class="loveBtn"></a> -->
+                        </label>                        
+                    </p>
+                    <!-- 歌手 -->
+                    <p class="songer">陈慧林</p>
+                </div>
+            </div>
+            <!-- 播放控制 -->
+            <div class="control">
+                <!-- 按钮区域 -->
+                <div class="btn_wrap">
+                    <!-- 删除 -->
+                    <a href="javascript:;" class="delBtn"></a>
+                    <!-- 上一首 -->
+                    <a href="javascript:;" class="lastBtn"></a>
+                    <!-- 播放/暂停 -->
+                    <a href="javascript:;" class="controlBtn pauseBtn"></a>
+                    <!-- 下一首 -->
+                    <a href="javascript:;" class="prevBtn"></a>
+                </div>
+                <!-- 进度条 -->
+                <div class="slip_wrap">
+                    <!-- 当前播放时间 -->
+                    <p class="nowTime">03:25</p>
+                    <!-- 进度 -->
+                    <div class="slipBar">
+                        <!-- 播放进度 -->
+                        <span class="playBar"></span>
+                        <!-- 拖动按钮 -->
+                        <span class="slipBtn"></span>
+                        <!-- 加载进度 -->
+                        <span class="loadBar"></span>
+                    </div>
+                    <!-- 总时长 -->
+                    <p class="sumTime">05:45</p>
+                </div>
+            </div>
+           
+            <!-- 功能控制 -->
+            <div class="use">                
+                <div class="volumeWrap">
+                    <!-- 音量按钮 -->
+                    <a href="javascript:;" class="volumeBtn"></a>
+                    <div class="barWrap">
+                        <!-- 音量条 -->
+                        <div class="volumeSlip"></div>
+                        <!-- 总高度 -->
+                        <div class="volumeBar"></div>
+                    </div>                    
+                </div>
+                <!-- 音乐列表 -->
+                <a href="javascript:;" class="listBtn"></a>
+            </div>            
+        </div>        
+    </div>
+    <!-- 歌曲 -->
+    <audio src="../resource/song/不遗憾.mp3" id="songing"></audio>
+
+    <script src="../JavaScript/songBg.js"></script>
+    <script src="../JavaScript/footerOther.js"></script>
+    <script src="../JavaScript/player.js"></script>
+</body>
+</html>

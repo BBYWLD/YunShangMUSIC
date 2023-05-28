@@ -1,0 +1,58 @@
+#content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#content .bgColor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(180deg, rgba(216, 216, 216, 0) 7%, rgba(64, 158, 255, 0.55) 83%, #409EFF 105%);
+  z-index: -1;
+}
+#content > h1 {
+  display: block;
+  font-size: 64px;
+  font-family: HarmonyOS Sans SC;
+  font-weight: bold;
+  line-height: 112px;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transform: translateY(-112px);
+}
+#content > .goMain {
+  display: block;
+  width: 54px;
+  height: 54px;
+  background: url(../Images/cover/goMain.png);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  opacity: 0.6;
+  transform: translateY(250px);
+}
+#content > .goMain:hover {
+  opacity: 1;
+}
+#content .mainFlash {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../Images/cover/mainFlash.png);
+  background-size: cover;
+  transform: translateY(300px);
+  animation: goMain 0.5s ease-in 0s infinite alternate;
+}
+@keyframes goMain {
+  to {
+    transform: translateY(310px);
+  }
+}
